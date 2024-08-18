@@ -71,3 +71,19 @@ elem.style.fontWeight = "normal";
 ;})
 
 })
+
+var menupage = document.querySelector("#menupage");
+
+var flag= 0;
+var menu = document.querySelector("#menu");
+menu.addEventListener("click",function(){
+if(flag == 0){
+menupage.style.width= "100vw";
+flag= 1;
+} 
+else{
+menupage.style.width= "0vw";
+flag= 0;
+}
+
+})
