@@ -78,7 +78,7 @@ var flag= 0;
 var menu = document.querySelector("#menu");
 menu.addEventListener("click",function(){
 if(flag == 0){
-menupage.style.width= "100vw";
+menupage.style.width= "60vw";
 flag= 1;
 } 
 else{
