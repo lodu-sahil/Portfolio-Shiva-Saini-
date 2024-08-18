@@ -121,6 +121,17 @@ font-size:8vh;
 position: absolute;
 bottom: -10vh;}
 
+
+
+.currentwork{margin-top: 8vh;
+text-transform: uppercase;
+font-size: 2vh;
+opacity: .8;
+}
+
+
+
+
 @media (min-width: 769px) {
 #fs {
 height: 50vh;
