@@ -46,6 +46,7 @@ font-style: italic;
 
 width: 100vw;
 height: 100vh;
+
 background-color: lightgreen;
 }
 
@@ -98,6 +99,8 @@ display:flex;
 justify-content:center;
 align-items:center;
 z-index:3;
+
+
 }
 #maintitle div{
 position: relative;
@@ -240,4 +243,3 @@ border-radius:30px;
 margin-left: 20vw;
 margin-top:-50vh;
 }
-
