@@ -1,0 +1,79 @@
+* {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 1rem;
+}
+
+#skill-page {
+    width: 100%;
+    max-width: 600px; /* Limits the width on larger screens */
+    background-color: #222;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 3px #000;
+}
+
+#skill-title h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: green;
+}
+
+#skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.skill-item {
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: scale(1.03);
+}
+
+.skill-item h2 {
+    color: green;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.skill-item p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    #skill-page {
+        padding: 1rem;
+    }
+
+    #skill-title h1 {
+        font-size: 1.5rem;
+    }
+
+    .skill-item h2 {
+        font-size: 1.2rem;
+    }
+
+    .skill-item p {
+        font-size: 0.9rem;
+    }
+}
