@@ -51,6 +51,42 @@ top: 0,
 duration: 1,
 })
 
+.to("#img1", { 
+  marginTop: "-10vh", 
+delay: -1,
+  duration: 1, 
+  ease: "Expo.easeInOut" 
+})
+
+.to("#img2", { 
+marginTop:"-47vh",
+delay: -7,
+  duration: 1, 
+  ease: "Expo.easeInOut" 
+})
+
+.to("#img3", { 
+marginTop:"-50vh",
+delay: -4,
+  duration: 1, 
+  ease: "Expo.easeInOut" 
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 var myName = document.querySelectorAll("#nav a")
 

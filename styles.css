@@ -15,6 +15,7 @@ width:100%;
 #fs {
 
 
+
 width: 100vw;
 height: 100vh;
 background-color: black;
@@ -34,6 +35,7 @@ overflow: hidden;
 }
 
 #fs div h1 {
+
 position: absolute;
 color: white;
 bottom: -5vh;
@@ -46,6 +48,9 @@ font-style: italic;
 
 width: 100vw;
 height: 100vh;
+
+
+
 
 background-color: lightgreen;
 }
@@ -206,9 +211,9 @@ height: 50vh;
 }
  
  #page2{
+ height: 90vh;
  width:100vw;
-
- background-color:lightgreen;
+background-color:#111;
  display: flex;
  justify-content:center;
 flex-wrap: wrap;
@@ -218,28 +223,100 @@ gap: 10vh;
 #img1{
 width: 60vw;
 height:45vh;
-background-color:red;
+background-size:cover;
+background-image: url("img1.jpg");
 transform: rotate(-5deg);
 border-radius:30px;
 margin-left: -20vw;
-margin-top:-15vh;
+
 }
 
 #img2{
 width: 60vw;
 height:45vh;
-background-color:yellow;
+background-size:cover;
+background-image: url("img2.jpg");
 transform: rotate(0deg);
 border-radius:30px;
-margin-top:-47vh;
+
 }
 
 #img3{
 width: 60vw;
 height:45vh;
-background-color:pink;
+background-size:cover;
+background-image: url("img3.jpg");
 transform: rotate(5deg);
 border-radius:30px;
 margin-left: 20vw;
-margin-top:-50vh;
+
+}
+
+
+
+#page3{width: 100vw;
+height: 53vh;
+background-color: red;}
+
+#aboutme{
+width: 100vw;
+height: 8vh;
+background-color:#111;
+color: lightgray;
+text-transform: uppercase;
+display: flex;
+align-items: center;
+padding-left: 5vw;
+
+}
+
+#fullbio{
+width:100vw;
+height: 45vh;
+background-color:#111;
+text-transform: uppercase;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-left: 5vw;
+font-size:4.5vh;
+color:#eee;
+position: relative;
+
+}
+
+#unc{font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 800;
+color: lightgreen;
+font-style: italic;
+}
+
+#mob{position: absolute;
+color: yellow;
+
+bottom: 8vh;
+font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+left:7vw;}
+
+#web{position: absolute;
+color: lightgreen;
+
+bottom: 8vh;
+right:17vw;
+font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+#page4{
+width: 100vw;
+height: 100vh;
+ background-color: #222;
+ 
 }
