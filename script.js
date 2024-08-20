@@ -1,5 +1,4 @@
 
-
 var tl = gsap.timeline();
 
 tl
@@ -59,14 +58,14 @@ delay: -1,
 })
 
 .to("#img2", { 
-marginTop:"-47vh",
+marginTop:"-55vh",
 delay: -7,
   duration: 1, 
   ease: "Expo.easeInOut" 
 })
 
 .to("#img3", { 
-marginTop:"-50vh",
+marginTop:"-60vh",
 delay: -4,
   duration: 1, 
   ease: "Expo.easeInOut" 
@@ -226,3 +225,28 @@ event.target.style.backgroundColor="#222";}
 
 
 
+
+
+
+
+
+
+const parent = document.getElementById('page2');
+const children = parent.children;
+
+window.addEventListener('scroll', () => {
+  const top = parent.getBoundingClientRect().top;
+  const scrollY = window.scrollY;
+
+  if (top < window.innerHeight / 1.5) {
+    for (let i = 0; i < children.length; i++) {
+      const child = children[i];
+      child.style.transform = `translateY(${scrollY / 8}px)`;
+    }
+  } else {
+    for (let i = 0; i < children.length; i++) {
+      const child = children[i];
+      child.style.transform = '';
+    }
+  }
+});
