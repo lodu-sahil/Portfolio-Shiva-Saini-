@@ -1,89 +1,21 @@
 
-var tl = gsap.timeline();
 
-tl
-.to("#fs h1",{
-bottom: 0,
-duration: 2,
-ease: Expo.easeInOut,
-})
+function animate() {
+  var tl = gsap.timeline();
+  tl
+    .to("#fs h1", { bottom: 0, duration: 2, ease: Expo.easeInOut })
+    .to("#fs div", { height: 0, duration: 2, ease: Expo.easeInOut })
+    .to("#fs", { height: 0, delay: -2, duration: 2, ease: Expo.easeInOut })
+    .to("#elem", { height: 0, delay: -2, duration: 2, ease: Expo.easeInOut })
+    .to("#white div", { delay: 0, top: 0, duration: 1, ease: Expo.easeInOut })
+    .to(".wd", { delay: -1, bottom: 0, duration: 1 })
+    .to("#nyro", { delay: -1, top: 0, duration: 1 })
+    .to("#img1", { marginTop: "-10vh", delay: -1, duration: 1, ease: "Expo.easeInOut" })
+    .to("#img2", { marginTop: "-55vh", delay: -7, duration: 1, ease: "Expo.easeInOut" })
+    .to("#img3", { marginTop: "-60vh", delay: -4, duration: 1, ease: "Expo.easeInOut" });
+}
 
-.to("#fs div",{
-height: 0,
-duration: 2,
-ease: Expo.easeInOut,
-})
-
-.to("#fs",{
-height: 0,
-delay: -2,
-duration: 2,
-ease: Expo.easeInOut,
-})
-
-
-.to("#elem",{
-height: 0,
-delay: -2,
-duration: 2,
-ease: Expo.easeInOut,
-
-})
-
-
-.to("#white div",{
-delay: 0,
-top: 0,
-duration: 1,
-ease: Expo.easeInOut,
-})
-
-.to(".wd",{
-delay: -1,
-bottom: 0,
-duration: 1,
-})
-
-.to("#nyro",{
-delay: -1,
-top: 0,
-duration: 1,
-})
-
-.to("#img1", { 
-  marginTop: "-10vh", 
-delay: -1,
-  duration: 1, 
-  ease: "Expo.easeInOut" 
-})
-
-.to("#img2", { 
-marginTop:"-55vh",
-delay: -7,
-  duration: 1, 
-  ease: "Expo.easeInOut" 
-})
-
-.to("#img3", { 
-marginTop:"-60vh",
-delay: -4,
-  duration: 1, 
-  ease: "Expo.easeInOut" 
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+window.addEventListener("load", animate);
 
 
 
