@@ -160,11 +160,15 @@ img1.addEventListener(
 "touchstart", function(){
 img1.style.transition= "all ease-in-out .5s";
 img1.style.zIndex = "5";
+img2.style.opacity=".5";
+img3.style.opacity=".5";
 img1.style.boxShadow = "0px 0px 10px 1px white";
 });
 
 img1.addEventListener(
 "touchend", function(){
+img3.style.opacity="1";
+img2.style.opacity="1";
 img1.style.zIndex = "0";
 img1.style.transition= "0";
 img1.style.boxShadow = "0px 0px 0px 0px white";
@@ -176,12 +180,16 @@ img2.addEventListener(
 img2.style.transition= "all ease-in-out .5s";
 img2.style.boxShadow = "0px 0px 10px 1px white";
 img2.style.zIndex = "5";
+img3.style.opacity=".5";
+img1.style.opacity=".5";
 });
 
 img2.addEventListener(
 "touchend", function(){
 img2.style.zIndex = "0";
 img2.style.transition= "0";
+img3.style.opacity="1";
+img1.style.opacity="1";
 img2.style.boxShadow = "0px 0px 0px 0px white";
 });
 
@@ -189,6 +197,8 @@ img2.style.boxShadow = "0px 0px 0px 0px white";
 img3.addEventListener(
 "touchstart", function(){
 img3.style.zIndex = "5";
+img2.style.opacity=".5";
+img1.style.opacity=".5";
 img3.style.transition= "all ease-in-out .5s";
 img3.style.boxShadow = "0px 0px 10px 1px white";
 });
@@ -196,7 +206,23 @@ img3.style.boxShadow = "0px 0px 10px 1px white";
 img3.addEventListener(
 "touchend", function(){
 img3.style.zIndex = "0";
+img2.style.opacity="1";
+img1.style.opacity="1";
 img3.style.transition= "0";
 img3.style.boxShadow = "0px 0px 0px 0px white";
 });
+
+
+
+
+
+var msgs = document.querySelectorAll('.msg');
+msgs.forEach(el => el.addEventListener('touchstart', touchStart));
+function touchStart() {
+event.target.style.backgroundColor="green";}
+msgs.forEach(el => el.addEventListener('touchend', touchEnd));
+function touchEnd() {
+event.target.style.backgroundColor="#222";}
+
+
 

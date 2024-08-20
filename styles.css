@@ -316,8 +316,10 @@ font-family: "Merienda", cursive;
 
 
 #page4{
+position: relative;
 width: 100vw;
 height: 150vh;
+overflow: hidden;
  background-color: #222;
 }
 
@@ -365,9 +367,10 @@ padding-left: 10vw;
 padding-top: 5vw;
 border-bottom: 1px solid lightgreen;
 position: relative;
-}
+margin-left:1.5vh;
 
- .chachi{ 
+ }
+ .chachi{
  border-top: 1px solid lightgreen;}
  
 .chacha h5{margin-top: 1vh;}
@@ -377,3 +380,106 @@ position: absolute;
 right: -2vh;
 font-size: 5vh;
 bottom:5vh;}
+
+#animatedbox1{
+width: 50vw;
+height: 5vh;
+background-color: red;
+position: absolute;
+bottom: 0;
+right:0;
+filter: blur(20px);
+border-radius:50%;
+animation: animation1 5s infinite ease-in-out; 
+}
+
+#animatedbox2{
+width: 50vw;
+height: 5vh;
+background-color: green;
+position: absolute;
+bottom: 0;
+border-radius:50%;
+filter: blur(20px);
+left:0;
+animation: animation2 5s infinite; 
+}
+
+#animatedbox3{
+width: 50vw;
+height: 5vh;
+background-color: orange;
+position: absolute;
+bottom: 0;
+border-radius:50%;
+filter: blur(20px);
+animation: animation3 5s infinite; 
+left:25%;
+}
+#animatedbox4{
+width: 50vw;
+height: 5vh;
+background-color: blue;
+animation: animation4 5s infinite; 
+position: absolute;
+bottom: 0;
+border-radius:50%;
+filter: blur(20px);
+right:25%;
+}
+
+
+@keyframes animation1{
+  0%{ 
+height: 5vh;
+  }
+   50%{ 
+height: 0vh;
+}
+100%{ 
+height: 5vh;
+}
+
+}
+
+
+
+@keyframes animation2{
+  0%{ 
+height: 5vh;
+  }
+   50%{ 
+height: 0vh;
+}
+100%{ 
+height: 5vh;
+}
+
+}
+
+
+@keyframes animation3{
+  0%{ 
+height: 5vh;
+  }
+   50%{ 
+height: 0vh;
+}
+100%{ 
+height: 5vh;
+}
+
+}
+
+@keyframes animation4{
+  0%{ 
+height: 5vh;
+  }
+   50%{ 
+height: 0vh;
+}
+100%{ 
+height: 5vh;
+}
+
+}
