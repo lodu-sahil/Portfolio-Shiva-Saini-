@@ -241,12 +241,14 @@ window.addEventListener('scroll', () => {
   if (top < window.innerHeight / 1.5) {
     for (let i = 0; i < children.length; i++) {
       const child = children[i];
-      child.style.transform = `translateY(${scrollY / 8}px)`;
+      child.style.transform = `translateY(${scrollY / 7}px)`;
+      child.style.transition = 'transform 0.5s ease-out';
     }
   } else {
     for (let i = 0; i < children.length; i++) {
       const child = children[i];
       child.style.transform = '';
+      child.style.transition = 'transform 0.5s ease-in';
     }
   }
 });
