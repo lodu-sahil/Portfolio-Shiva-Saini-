@@ -1,9 +1,4 @@
-# Portfolio-Shiva-Saini
-_Web Developer Portfolio_
-📁
-
 _About_
-👋
 
 This repository showcases my skills and experience as a web developer, featuring a curated collection of projects that demonstrate my expertise in building responsive, efficient, and scalable web applications.
 
