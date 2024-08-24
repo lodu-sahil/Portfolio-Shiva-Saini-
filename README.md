@@ -5,13 +5,14 @@ This repository showcases my skills and experience as a web developer, featuring
 _Projects_
 🗂️
 
-- Calculator: A brief description of the project, including technologies used and accomplishments.
+- Calculator: A web-based calculator that performs basic arithmetic operations, including addition, subtraction, multiplication, and division.accomplishments.
   link: https://shiva-sainiiii.github.io/Calculator-/
   
-- Tic Tac Toe: A brief description of the project, including technologies used and accomplishments.
+- Tic Tac Toe: 
+A web-based Tic Tac Toe game where two players can play against each other, with the option to play against a simple AI, built using HTML, CSS, JavaScript, and React, featuring player vs player and player vs AI game modes, game reset, winner announcement, and AI difficulty adjustment.
   link: https://shiva-sainiiii.github.io/Zero-Kata-Game-/
   
-- Amazon Clone: A brief description of the project, including technologies used and accomplishments.
+- Amazon Clone:The Amazon Clone project is a replica of the popular e-commerce website Amazon, built to demonstrate expertise in web development and e-commerce functionality. The project aims to mimic the original website's features, user interface, and user experience.
   link: https://shiva-sainiiii.github.io/Amazon-Clone/cart.html
   
 
