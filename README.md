@@ -37,7 +37,7 @@ To run this project locally, follow these steps:
 _Contact_
 📲
 
-If you have any questions or want to collaborate on a project, feel free to reach out to me at mailto:your-email@example.com or connect with me on LinkedIn at (link unavailable).
+If you have any questions or want to collaborate on a project, feel free to reach out to me at mailto: shivasaini5.666@gmail.com or connect with me on LinkedIn at https://www.linkedin.com/in/shiva-sainiiii?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app.
 
 _License_
 📝
