@@ -13,7 +13,7 @@ A web-based Tic Tac Toe game where two players can play against each other, with
   link: https://shiva-sainiiii.github.io/Zero-Kata-Game-/
   
 - Amazon Clone:The Amazon Clone project is a replica of the popular e-commerce website Amazon, built to demonstrate expertise in web development and e-commerce functionality. The project aims to mimic the original website's features, user interface, and user experience.
-  link: https://shiva-sainiiii.github.io/Amazon-Clone/cart.html
+  link: https://shiva-sainiiii.github.io/Amazon-Clone/index.html
   
 
 _Technologies Used_
