@@ -39,9 +39,3 @@ _Contact_
 
 If you have any questions or want to collaborate on a project, feel free to reach out to me at mailto: shivasaini5.666@gmail.com or connect with me on LinkedIn at https://www.linkedin.com/in/shiva-sainiiii?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app.
 
-_License_
-📝
-
-This repository is licensed under the MIT License. See LICENSE for details.
-
-Estos emojis agregan un toque visual atractivo a tu README y ayudan a resaltar las diferentes secciones. Recuerda utilizarlos de manera moderada y apropiada para mantener un tono profesional.
