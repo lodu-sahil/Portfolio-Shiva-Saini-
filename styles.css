@@ -1,326 +1,250 @@
 * {
 font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+font-weight: 400;
+font-style: normal;
 margin: 0;
 padding: 0;
+color:white;
 box-sizing: border-box;
 }
+body{
+background-color:#222;}
 
-#main {
-width:100%;
-
-}
-
-#fs {
-
-
-
-width: 100vw;
-height: 100vh;
-background-color: black;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-#fs div {
-width: 50%;
-height: 50px;
-display: flex;
-justify-content: center;
-align-items: center;
-position: relative;
-overflow: hidden;
-}
-
-#fs div h1 {
-
-position: absolute;
-color: white;
-bottom: -5vh;
-font-family: "Ubuntu", sans-serif;
-font-weight: 300;
-font-style: italic;
-}
-
-#elem {
-
-width: 100vw;
-height: 100vh;
-
-
-
-
-background-color: lightgreen;
-}
-
-#white {
-
-width: 100vw;
-height: 100vh;
-background-color:#111;
-position: relative;
-display: flex;
-justify-content:center;
+#loader{
+width:100vw;
+height:100vh;
+position:fixed;
+display:flex;
 align-items:center;
-overflow: hidden;
+justify-content:center;
+background-color:#111;
+overflow:hidden;
+z-index:1;
+}
+
+
+
+
+
+#loader2{
+width:100vw;
+height:0vh;
+position:fixed;
+background-color:red;
+bottom:0;
+z-index:1;
+background-color: aqua;
+}
+
+
+#title{
+width:50vw;
+height:5vh;
+overflow:hidden;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+color:white;
+
+}
+
+#title h1{position: absolute;
+bottom:-100%;
+font-style:italic;}
+
+
+#page1{width:100vw;
+height:70vh;
+background-color: #222;
+}
+
+#page1 #nav{
+width:100vw;
+height:10vh;
+color:aqua;
+display:flex;
+padding:2vh;
+overflow:hidden;
+position:relaive;
+justify-content:space-between
+}
+
+#nav h1{
+border:1px solid aqua;
+display:flex;
+font-size:3vh;
+align-items:center;
+boder-radius:30px;
+padding-top:3vh;
+padding-bottom:3vh;
+padding-left:1vh;
+padding-right:1vh;
+border:2px solid aqua;
+border-radius:50px;
+display:flex;
+align-items:center;
+justify-content:center;
+height:4vh;
+font-weight:bold;
+width:22vh;
+position:absolute;
+top:-100%;
+justify-content:center;
+}
+
+
+#nav i{font-size:3vh;
+border:2px solid aqua;
+display:flex;
+align-items:center;
+justify-content:center;
+position:absolute;
+right:3vh;
+height:4vh;
+top:-100%;
+width:4vh;
+z-index:1;
+border-radius:50%;
+padding:3vh;
+font-weight:bold;
+z-index:3;
+}
+
+#menupage{width:0vw;
+z-index:2;
+height:100vh;
+background-color:#222;
+position:fixed;
+right:0;
+top:0;
+overflow:hidden;
+border-bottom-left-radius:50%;
+border-top-left-radius:50%;
+transition: all ease-in-out 1s;
+box-shadow:0px 0px 100px 1px aqua;
+display:flex;
+text-align:right;
+gap:3vh;
+
+justify-content:center;
 flex-direction:column;
 }
-
-#nav {
-width: 100vw;
-height: auto;
-display: flex;
-justify-content: space-between;
-padding: 3vh;
-position: absolute;
-top: -10vh;
+#menupage a{
+color:white;
+margin-right:5vh;
+text-decoration:none;
+font-weight:bold;
+font-size:5vh;
+margin-left:5vh;
 
 }
 
 
-#nav a{ 
-color: white;
-border: 2px solid green;
-text-decoration: none;
-padding: 1vh 1vh;
-border-radius: 40px;
-font-size:2vh;
-}
-#maintitle{
-color: white;
-display: flex;
-align-items: left;
-justify-content:center;
-flex-direction: column;
+
+
+#maintitle {
+  width: 100vw;
+  height: 50vh;
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
 }
 
-#nav #menu{
-border-radius: 50%;
-width: 5vh;
-height:5vh;
-display:flex;
-justify-content:center;
-align-items:center;
-z-index:3;
-
-
-}
-#maintitle div{
-position: relative;
-overflow: hidden;
-
+#maintitle div {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  overflow:hidden;
+  align-items: center;
+  font-size: 4vh;
+  position: relative;
 }
 
-#maintitle #nyro{
-font-family: "Ubuntu", sans-serif;
-font-weight: bold;
-font-size:8vh;
-font-style: italic;
-color: green;
-position: absolute;
-top: -10vh;
+#nyro {
+position:absolute;
+bottom:-10vh;
+  color: aqua;
+  font-style: italic;
+  margin-left:2vh;
 }
-
-
-#maintitle div{
-width: 100vw;
-height:11vh;
-position: relative;
-overflow: hidden;
-display: flex;
-padding-left: 2vh;
-
-}
-
 
 .wd {
-font-family: "Ubuntu", sans-serif;
-font-weight: 800;
-font-style: normal;
-font-size:8vh;
-position: absolute;
-bottom: -10vh;
+position:absolute;
+bottom:-10vh;
+  margin-left:2vh;
 }
+
 
 
 #currentposition{
-display: flex;
-justify-content:space-evenly;
-padding: 2vh;
-
-}
-.currentwork{
-margin-top:10vh;
-text-transform: uppercase;
-font-size: 1.5vh;
-opacity: .7;
-color:white;
-
-
-
-}
-
-#menupage{
-position: fixed;
-right:0;
-height:100vh;
-width:0vw;
-background-color: #111;
+width:100vw;
+height:20vh;
+margin-top:-6vh;
+font-size:1vh;
+opacity:0;
 display:flex;
+text-transform: uppercase;
+justify-content:space-evenly;
+padding:3vh;
+}
+
+
+
+#page2{
+width:100vw;
+height:50vh;
+background-color:#222;
+position:relative;
+display:flex;
+align-items:center;
 justify-content:center;
-text-align:right;
-flex-direction:column;
-gap:2vh;
-z-index:2;
-overflow:hidden;
+}
 
-border-bottom-left-radius: 50%;
-border-top-left-radius:50%;
-box-shadow:0px 0px 100px 1px #eee;
+.img{
+width:50vw;
+height:33vh;
+border-radius:10px;
+position:absolute;
 
 }
 
-#menupage a{
-color: #111;
-font-weight: 800;
-font-size: 5vh;
-text-decoration: none;
-margin-right: 3vh;
-}
-
-
-@media (min-width: 769px) {
-#fs {
-height: 50vh;
-}
-
-#fs div {
-width: 30%;
-height: 20px;
-}
-
-#fs div h1 {
-font-size: 24px;
-}
-
-#elem, #white {
-height: 50vh;
-}
-}
- 
- #page2{
- height: 90vh;
- width:100vw;
-background-color:#111;
- display: flex;
- justify-content:center;
-flex-wrap: wrap;
-gap: 10vh;
- }
 
 #img1{
-width: 60vw;
-height:45vh;
+left:3vh;
+background-image:url("img1.jpg");
 background-size:cover;
-background-image: url("img1.jpg");
-transform: rotate(-5deg);
-border-radius:30px;
-margin-left: -20vw;
-
-
+transform:rotate(-5deg);
+top:45vh;
 }
 
 #img2{
-width: 60vw;
-height:45vh;
+
+background-image:url("img2.jpg");
 background-size:cover;
-background-image: url("img2.jpg");
-transform: rotate(0deg);
-border-radius:30px;
-
+top:30vh;
 }
 
-#img3{
-width: 60vw;
-height:45vh;
+#img3{right:3vh;
+background-image:url("img3.jpg");
 background-size:cover;
-background-image: url("img3.jpg");
-transform: rotate(5deg);
-border-radius:30px;
-margin-left: 20vw;
-
+transform:rotate(5deg);
+bottom:-15vh;
+z-index:1;
 }
 
 
 
-#page3{width: 100vw;
-height: 53vh;
-background-color: red;}
-
-#aboutme{
-width: 100vw;
-height: 8vh;
-background-color:#111;
-color: lightgray;
-text-transform: uppercase;
-display: flex;
-align-items: center;
-padding-left: 5vw;
-
-}
-
-#fullbio{
-width:100vw;
-height: 45vh;
-background-color:#111;
-text-transform: uppercase;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding-left: 5vw;
-font-size:4.5vh;
-color:#eee;
-position: relative;
-
-}
-
-#unc{font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: 800;
-color: lightgreen;
-font-style: italic;
-}
-
-#mob{position: absolute;
-color: yellow;
-
-bottom: 8vh;
-font-family: "Merienda", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-left:7vw;}
-
-#web{position: absolute;
-color: lightgreen;
-
-bottom: 8vh;
-right:17vw;
-font-family: "Merienda", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
 
 
 #page4{
+border-radius:50px;
 position: relative;
 width: 100vw;
 height: 150vh;
 overflow: hidden;
- background-color: #222;
+ background-color: #111;
 }
 
 .links{width:100%;
@@ -354,10 +278,10 @@ height: 10vh;
  border: 2px solid green;
  border-radius: 40px;
  margin-top: 5vh;}
- 
+
  #connect{
  margin-bottom: 5vh;}
- 
+
  .chacha{
  border-radius:30px;
  width:90vw;
@@ -372,7 +296,7 @@ margin-left:1.5vh;
  }
  .chachi{
  border-top: 1px solid lightgreen;}
- 
+
 .chacha h5{margin-top: 1vh;}
 
 .chacha i{color: green;
@@ -384,7 +308,7 @@ bottom:5vh;}
 #animatedbox1{
 width: 50vw;
 height: 5vh;
-background-color: red;
+background-color: aqua;
 position: absolute;
 bottom: 0;
 right:0;
@@ -396,7 +320,7 @@ animation: animation1 5s infinite ease-in-out;
 #animatedbox2{
 width: 50vw;
 height: 5vh;
-background-color: green;
+background-color: aqua;
 position: absolute;
 bottom: 0;
 border-radius:50%;
@@ -408,7 +332,7 @@ animation: animation2 5s infinite;
 #animatedbox3{
 width: 50vw;
 height: 5vh;
-background-color: orange;
+background-color: aqua;
 position: absolute;
 bottom: 0;
 border-radius:50%;
@@ -419,7 +343,7 @@ left:25%;
 #animatedbox4{
 width: 50vw;
 height: 5vh;
-background-color: blue;
+background-color: aqua;
 animation: animation4 5s infinite; 
 position: absolute;
 bottom: 0;

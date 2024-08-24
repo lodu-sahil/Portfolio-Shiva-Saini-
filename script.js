@@ -1,87 +1,105 @@
 
 
-function animate() {
-  var tl = gsap.timeline();
-  tl
-    .to("#fs h1", { bottom: 0, duration: 2, ease: Expo.easeInOut })
-    .to("#fs div", { height: 0, duration: 2, ease: Expo.easeInOut })
-    .to("#fs", { height: 0, delay: -2, duration: 2, ease: Expo.easeInOut })
-    .to("#elem", { height: 0, delay: -2, duration: 2, ease: Expo.easeInOut })
-    .to("#white div", { delay: 0, top: 0, duration: 1, ease: Expo.easeInOut })
-    .to(".wd", { delay: -1, bottom: 0, duration: 1 })
-    .to("#nyro", { delay: -1, top: 0, duration: 1 })
-    .to("#img1", { marginTop: "-10vh", delay: -1, duration: 1, ease: "Expo.easeInOut" })
-    .to("#img2", { marginTop: "-55vh", delay: -7, duration: 1, ease: "Expo.easeInOut" })
-    .to("#img3", { marginTop: "-60vh", delay: -4, duration: 1, ease: "Expo.easeInOut" });
-}
 
-window.addEventListener("load", animate);
+var tl = gsap.timeline();
 
 
-
-var myName = document.querySelectorAll("#nav a")
-
-myName.forEach(function (elem){
-
-elem.addEventListener("touchstart", function(){
-elem.style.backgroundColor = "green";
-elem.style.color = "black";
-elem.style.fontWeight = "bold";
+tl.to("#title h1",{
+bottom:0,
+duration:2,
+ease: Expo.easeInOut,
 })
 
-
-elem.addEventListener("touchend", function(){
-elem.style.backgroundColor = "black";
-elem.style.color = "white";
-elem.style.fontWeight = "normal";
-
-;})
-
+tl.to("#title h1",{
+bottom:"100%",
+duration:1,
+ease: Expo.easeInOut,
 })
 
+tl.to("#loader",{
+height:0,
+duration:2,
+delay: -1,
+ease: Expo.easeInOut,
+})
+
+tl.to("#loader2",{
+height:"100%",
+bottom:"100%",
+duration:2,
+delay: -2,
+ease: Expo.easeInOut,
+})
+
+tl.to("#nav h1",{
+duration:2,
+delay: -2,
+top:"2vh",
+ease: Expo.easeInOut,
+})
+tl.to("#nav i",{
+position:"fixed",
+top:"2vh",
+duration:2,
+delay: -2,
+ease: Expo.easeInOut,
+})
+
+tl.to("#nyro",{
+bottom:0,
+duration:2,
+delay: -1,
+ease: Expo.easeInOut,
+});
+tl.to(".wd",{
+bottom:0,
+duration:2,
+delay: -1.8,
+ease: Expo.easeInOut,
+});
+tl.to("#img1",{
+top:0,
+duration:2,
+delay: -2,
+ease: Expo.easeInOut,
+});
+tl.to("#img3",{
+bottom:"0vh",
+duration:2,
+delay: -2,
+ease: Expo.easeInOut,
+});
+tl.to("#img2",{
+top:"8vh",
+duration:2,
+delay: -2,
+ease: Expo.easeInOut,
+});
+
+tl.to("#currentposition",{
+opacity:.5,
+duration:2,
+delay: -1.8,
+ease: Expo.easeInOut,
+});
+
+
+
+var menubtn = document.querySelector("#nav i");
 var menupage = document.querySelector("#menupage");
-var menupageA1 = document.querySelector("#a1");
-var menupageA2 = document.querySelector("#a2");
-var menupageA3 = document.querySelector("#a3");
-var menupageA4 = document.querySelector("#a4");
+var flag = 1;
 
+menubtn.addEventListener("click",function(){
+if(flag == 1){
 
+menupage.style.width="60vw";
 
-var flag= 0;
-var menu = document.querySelector("#menu");
-menu.addEventListener("click",function(){
-if(flag == 0){
-menupage.style.transition="all ease-in-out 1s";
-menupageA1.style.transition="all ease-in-out .5s 1s";
-menupage.style.width= "60vw";
-menupageA1.style.color= "white";
-menupageA2.style.transition="all ease-in-out .7s 1s";
-menupageA3.style.transition="all ease-in-out .9s 1s";
-menupageA4.style.transition="all ease-in-out 1s 1s";
-menupageA2.style.color= "white";
-menupageA3.style.color= "white";
-menupageA4.style.color= "white";
-flag= 1;
-} 
+flag = 0;}
 else{
-menupage.style.width= "0vw";
-menupage.style.transition= "all ease-in-out";
-menupageA1.style.color= "#111";
-menupage.style.transition="all ease-in-out .5s";
-menupageA1.style.transition="all ease-in-out .1s";
-menupageA2.style.color= "#111";
-menupageA3.style.color= "#111";
-menupageA4.style.color= "#111";
-menupageA2.style.transition="all ease-in-out .1s";
-menupageA3.style.transition="all ease-in-out .1s";
-menupageA4.style.transition="all ease-in-out .1s";
+menupage.style.width="0vw";
 
-flag= 0;
-}
+flag = 1;}
 })
-
-
-
 
 var img1 = document.querySelector("#img1");
 var img2 = document.querySelector("#img2");
@@ -143,26 +161,6 @@ img3.style.transition= "0";
 img3.style.boxShadow = "0px 0px 0px 0px white";
 });
 
-
-
-
-
-var msgs = document.querySelectorAll('.msg');
-msgs.forEach(el => el.addEventListener('touchstart', touchStart));
-function touchStart() {
-event.target.style.backgroundColor="green";}
-msgs.forEach(el => el.addEventListener('touchend', touchEnd));
-function touchEnd() {
-event.target.style.backgroundColor="#222";}
-
-
-
-
-
-
-
-
-
 const parent = document.getElementById('page2');
 const children = parent.children;
 
@@ -170,10 +168,10 @@ window.addEventListener('scroll', () => {
   const top = parent.getBoundingClientRect().top;
   const scrollY = window.scrollY;
 
-  if (top < window.innerHeight / 1.5) {
+  if (top < window.innerHeight / 2) {
     for (let i = 0; i < children.length; i++) {
       const child = children[i];
-      child.style.transform = `translateY(${scrollY / 7}px)`;
+      child.style.transform = `translateY(${scrollY / 20}px)`;
       child.style.transition = 'transform 0.5s ease-out';
     }
   } else {
