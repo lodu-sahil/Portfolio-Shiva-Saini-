@@ -8,7 +8,9 @@ _Projects_
 - Calculator: A brief description of the project, including technologies used and accomplishments.
   link: https://shiva-sainiiii.github.io/Calculator-/
   
-- [Project 2]: A brief description of the project, including technologies used and accomplishments.
+- Tic Tac Toe: A brief description of the project, including technologies used and accomplishments.
+  link: https://shiva-sainiiii.github.io/Zero-Kata-Game-/
+  
 - [Project 3]: A brief description of the project, including technologies used and accomplishments.
 
 _Technologies Used_
