@@ -5,7 +5,9 @@ This repository showcases my skills and experience as a web developer, featuring
 _Projects_
 🗂️
 
-- [Project 1]: A brief description of the project, including technologies used and accomplishments.
+- Calculator: A brief description of the project, including technologies used and accomplishments.
+  link: https://shiva-sainiiii.github.io/Calculator-/
+  
 - [Project 2]: A brief description of the project, including technologies used and accomplishments.
 - [Project 3]: A brief description of the project, including technologies used and accomplishments.
 
