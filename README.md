@@ -26,15 +26,6 @@ _Technologies Used_
 - Node.js, Express.js
 - MongoDB, MySQL
 
-_Getting Started_
-🔧
-
-To run this project locally, follow these steps:
-
-1. Clone the repository: `git clone (link unavailable)`
-2. Install dependencies: `npm install`
-3. Start the development server: `npm start`
-
 _Contact_
 📲
 
