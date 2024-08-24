@@ -11,7 +11,9 @@ _Projects_
 - Tic Tac Toe: A brief description of the project, including technologies used and accomplishments.
   link: https://shiva-sainiiii.github.io/Zero-Kata-Game-/
   
-- [Project 3]: A brief description of the project, including technologies used and accomplishments.
+- Amazon Clone: A brief description of the project, including technologies used and accomplishments.
+  link: https://shiva-sainiiii.github.io/Amazon-Clone/cart.html
+  
 
 _Technologies Used_
 💻
