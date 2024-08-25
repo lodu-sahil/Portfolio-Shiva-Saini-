@@ -509,9 +509,77 @@ footer a:hover {
 }
 
 .feat-title {
-    font-size: 100px;
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     flex-direction:column;
+    font-size: 60px;
     font-weight: bold;
     text-transform: uppercase;
     margin: 40px 0;
     line-height: 0.9;
 }
+
+.ht4{margin-left:-40vw;}
+
+
+.ht5{font-size:60px;
+margin-right:-20vw;}
+
+
+.pimg{width:90vw;
+height:90vw;
+background-color:red;
+margin-left:-6vw;
+margin-bottom:5vh;
+border-radius: 20px;
+transition:all ease-in-out .5s;
+position:relative;
+
+}
+
+.pimg button{width:30vw;
+height:6vh;
+position:absolute;
+bottom:1vh;
+left:1vh;
+
+font-weight:bold;
+background-size:cover;
+background-image:url("bgimg.jpeg");
+backgroud-color:yellow;
+border-radius:20px;
+border:none;
+}
+
+.pimg a{width:6vh;
+height:6vh;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+
+background-color:white;
+position:absolute;
+right:1vh;
+
+background-size:cover;
+background-image:url("bgimg.jpeg");
+bottom:1vh;}
+
+.pimg1{
+background-size:cover;
+background-image:url("amazon.jpg");}
+
+.pimg2{
+background-size:cover;
+background-image:url("zerokata.jpg");}
+.pimg3{
+background-size:cover;
+background-image:url("calculator.jpg");}
+.pimg4{
+background-size:cover;
+background-image:url("amazon.jpg");}
+.pimg5{
+background-size:cover;
+background-image:url("amazon.jpg");}

@@ -135,7 +135,7 @@ img1.style.opacity=".5";
 
 img2.addEventListener(
 "touchend", function(){
-img2.style.zIndex = "1";
+img2.style.zIndex = "2";
 img2.style.transition= "0";
 img3.style.opacity="1";
 img1.style.opacity="1";
@@ -154,7 +154,7 @@ img3.style.boxShadow = "0px 0px 10px 1px white";
 
 img3.addEventListener(
 "touchend", function(){
-img3.style.zIndex = "1";
+img3.style.zIndex = "3";
 img2.style.opacity="1";
 img1.style.opacity="1";
 img3.style.transition= "0";
@@ -403,6 +403,20 @@ flagg = 0;
 
 
 
+var pimg = document.querySelectorAll(".pimg");
+
+pimg.forEach(function(e){
+
+e.addEventListener("touchstart",function(){
+e.style.boxShadow="0px 0px 10px 1px aqua";
+e.style.scale="1.02";
+})
+e.addEventListener("touchend",function(){
+e.style.boxShadow="0px 0px 0px 0px aqua";
+e.style.scale="1";
+})
+
+})
 
 const elements = [
 "#lets",
@@ -418,6 +432,15 @@ const elements = [
 ".ht2",
 ".ht3",
 ".ht4",
+".ht5",
+".pimg1",
+".pimg2",
+".pimg3",
+"img1",
+"img2",
+"img3",
+
+"#page4",
 ".currentwork"
 
 ];
@@ -431,4 +454,19 @@ elements.forEach(el => {
       toggleActions: "play none none reset"
     }
   });
+});
+
+
+const locomotive = new LocomotiveScroll({
+el: document.querySelector('#main'),
+smooth: true,
+getDirection: true
+});
+
+locomotive.on('scroll', (args) => {
+// your code here
+});
+
+locomotive.on('call', (args) => {
+// your code here
 });
